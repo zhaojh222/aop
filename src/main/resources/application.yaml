@@ -1,0 +1,19 @@
+server:
+  context-path: /aop
+  port: 8888
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    database: mysql
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/test
+    username: root
+    password:
+#  aop:
+#    auto: true
+#    proxy-target-class: false
+
